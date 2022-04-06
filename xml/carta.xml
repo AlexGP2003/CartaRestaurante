@@ -1,6 +1,241 @@
-<?xml version="1,0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <menu>
-    <plato tipo="Pescado">
-        <nombre></nombre>
+    <plato tipo="Ensaladas">
+        <nombre>Ensalada César</nombre>
+        <precio>6,90€</precio>
+        <descripcion>Una ensalada César es una ensalada de lechuga romana y croûtons con jugo de limón, aceite de oliva, huevo, salsa Worcestershire, anchoas, ajo, mostaza de Dijon, queso parmesano y pimienta negra.</descripcion>
+        <calorias>400kcal</calorias>
+        <caracteristicas>
+            <item>Carne</item> 
+            <item>Vegetales</item>
+            <item>Huevo</item>
+            <item>Lacteos</item>
+            <item>Pescado</item>
+        </caracteristicas>
     </plato>
+    <plato tipo="Ensaladas">
+        <nombre>Ensalada de nueces y rulo de cabra</nombre>
+        <precio>7,00€</precio>
+        <descripcion>Una ensalada de lechuga romana, tomate cherry, queso de cabra, nueces y uvas y pasas aliñada con sal miel aceite y vinagre de manzana.</descripcion>
+        <calorias>290kcal</calorias>
+        <caracteristicas>
+            <item>Frutos Secos</item> 
+            <item>Vegetales</item>
+            <item>Lacteos</item>
+        </caracteristicas>
+    </plato>
+    <plato tipo="Ensaladas">
+        <nombre>Ensalada de salmón ahumado</nombre>
+        <precio>6,90€</precio>
+        <descripcion>Una ensalada de lechuga romana tomates, cebolla roja salmón ahumado, pepino, mostaza, jugo de limón, eneldo, pimiento, aceite de oliva y sal.</descripcion>
+        <calorias>306kcal</calorias>
+        <caracteristicas>
+            <item>Vegetales</item>
+            <item>Pescado</item>
+        </caracteristicas>
+    </plato>
+    <plato tipo="Ensaladas">
+        <nombre>Ensalada de la huerta</nombre>
+        <precio>5,90€</precio>
+        <descripcion>Una ensalada con lechuga, pepino, cebolla, zanahoria, tomate, aceitunas, vinagre, aceite de oliva y sal.</descripcion>
+        <calorias>250kcal</calorias>
+        <caracteristicas>
+            <item>Vegetales</item>
+        </caracteristicas>
+    </plato>
+    <plato tipo="Tapas">
+        <nombre>Bravas</nombre>
+        <precio>4,90€</precio>
+        <descripcion>Patatas cortadas en dados grandes, fritos en aceite de oliva y aderezados con salsa brava, la cual es una salsa picante.</descripcion>
+        <calorias>250kcal</calorias>
+        <caracteristicas>
+            <item>Picante</item>
+        </caracteristicas>
+    </plato>
+    <plato tipo="Tapas">
+        <nombre>Pulpo a la gallega</nombre>
+        <precio>8,90€</precio>
+        <descripcion>Pulpo con patatas gallegas, sal gruesa, pimentón dulce y picante y aceite de oliva.</descripcion>
+        <calorias>167kcal</calorias>
+        <caracteristicas>
+            <item>Picante</item>
+            <item>Pescado</item>
+        </caracteristicas>
+    </plato>
+    <plato tipo="Tapas">
+        <nombre>Mejillones a la marinera</nombre>
+        <precio>7,90€</precio>
+        <descripcion>Mejillones con laurel, cebolla, pimentón, harina de trigo, vino blanco, perejil, sal y aceite de oliva.</descripcion>
+        <calorias>250kcal</calorias>
+        <caracteristicas>
+            <item>Picante</item>
+            <item>Marisco</item>
+            <item>Vegetales</item>
+            <item>Trigo</item>
+        </caracteristicas>
+    </plato>   
+    <plato tipo="Tapas">
+        <nombre>Pimientos de padrón fritos</nombre>
+        <precio>5,90€</precio>
+        <descripcion>Pimientos fritos con sal y aceite de oliva.</descripcion>
+        <calorias>145kcal</calorias>
+        <caracteristicas>
+            <item>Picante</item>
+            <item>Vegetales</item>
+        </caracteristicas>
+    </plato>      
+    <plato tipo="Tapas">
+        <nombre>Croquetas de la casa</nombre>
+        <precio>5,90€</precio>
+        <descripcion>Croquetas de jamón ibérico y huevo duro.</descripcion>
+        <calorias>121kcal</calorias>
+        <caracteristicas>
+            <item>Lacteos</item>
+            <item>Huevo</item>
+            <item>Trigo</item>
+            <item>Carne</item>
+        </caracteristicas>
+    </plato>
+    <plato tipo="Tapas2">
+        <nombre>Pincho moruno</nombre>
+        <precio>5,50€</precio>
+        <descripcion>Carne de cordero con diente de ajo, cebolla, limón, pimentón picante, comino, azafrán pimienta, canela, cilantro, sal y aceite de oliva.</descripcion>
+        <calorias>250kcal</calorias>
+        <caracteristicas>
+            <item>Vegetales</item>
+            <item>Picante</item>
+            <item>Carne</item>
+        </caracteristicas>
+    </plato>
+    <plato tipo="Tapas2">
+        <nombre>Calamares a la andaluza</nombre>
+        <precio>5,00€</precio>
+        <descripcion>Calamares rebozados con harina y fritos en aceite de oliva condimentados con sal y limón.</descripcion>
+        <calorias>232kcal</calorias>
+        <caracteristicas>
+            <item>Pescado</item>
+            <item>Trigo</item>
+        </caracteristicas>
+    </plato>
+        <plato tipo="Tapas2">
+        <nombre>Callos</nombre>
+        <precio>6,00€</precio>
+        <descripcion>Callos de ternera con morcilla, panceta laurel y una mezcla de especias, dientes de ajo, guindillas y salsa de tomate.</descripcion>
+        <calorias>320kcal</calorias>
+        <caracteristicas>
+            <item>Carne</item>
+            <item>Vegetales</item>
+            <item>Picante</item>
+        </caracteristicas>
+    </plato>
+    <plato tipo="Tapas2">
+        <nombre>Pescadito frito</nombre>
+        <precio>5,00€</precio>
+        <descripcion>Boquerones, chopitos y chocos rebozados en harina de freír con aceite de oliva y condimentados con sal y limón.</descripcion>
+        <calorias>223kcal</calorias>
+        <caracteristicas>
+            <item>Pescado</item>
+            <item>Trigo</item>
+        </caracteristicas>
+    </plato>
+    <plato tipo="Tapas2">
+        <nombre>Tortilla de patatas</nombre>
+        <precio>5,90€</precio>
+        <descripcion>Tortilla de patatas con cebolla, aceite y sal.</descripcion>
+        <calorias>243kcal</calorias>
+        <caracteristicas>
+            <item>Huevo</item>
+            <item>Vegetales</item>
+        </caracteristicas>
+    </plato>      
+    <plato tipo="Paellas">
+        <nombre>Paella de marisco</nombre>
+        <precio>14,90€</precio>
+        <descripcion>Paella con gambas, sepia, mejillones, almejas.</descripcion>
+        <calorias>424kcal</calorias>
+        <caracteristicas>
+            <item>Cereal</item>
+            <item>Pescado</item>
+            <item>Marisco</item>
+            <item>Vegetales</item>
+        </caracteristicas>
+    </plato>       
+    <plato tipo="Paellas">
+        <nombre>Paella de carne</nombre>
+        <precio>12,90€</precio>
+        <descripcion>Paella con pollo y pimentón verde.</descripcion>
+        <calorias>413kcal</calorias>
+        <caracteristicas>
+            <item>Cereal</item>
+            <item>Carne</item>
+            <item>Vegetales</item>
+        </caracteristicas>
+    </plato>     
+    <plato tipo="Paellas">
+        <nombre>Paella mixta</nombre>
+        <precio>13,90€</precio>
+        <descripcion>Paella con gambas, sepia, mejillones y pollo.</descripcion>
+        <calorias>434kcal</calorias>
+        <caracteristicas>
+            <item>Cereal</item>
+            <item>Carne</item>
+            <item>Pescado</item>
+            <item>Marisco</item>
+            <item>Vegetales</item>
+        </caracteristicas>
+    </plato>    
+    <plato tipo="Paellas">
+        <nombre>Paella vegetariana</nombre>
+        <precio>11,90€</precio>
+        <descripcion>Paella con alcachofas, espárragos y aceitunas.</descripcion>
+        <calorias>400kcal</calorias>
+        <caracteristicas>
+            <item>Cereal</item>
+            <item>Vegetales</item>
+        </caracteristicas>
+    </plato>  
+    <plato tipo="Postres">
+        <nombre>Café con leche</nombre>
+        <precio>2,50€</precio>
+        <descripcion>Café con leche al gusto del comensal.</descripcion>
+        <calorias>23kcal</calorias>
+        <caracteristicas>
+            <item>Cereal</item>
+            <item>Lacteos</item>
+        </caracteristicas>
+    </plato>              
+    <plato tipo="Postres">
+        <nombre>Trufas con nata</nombre>
+        <precio>3,99€</precio>
+        <descripcion>4 trufas con nata.</descripcion>
+        <calorias>87kcal</calorias>
+        <caracteristicas>
+            <item>Cereal</item>
+            <item>Azúcar</item>
+            <item>Lacteos</item>
+        </caracteristicas>
+    </plato>        
+    <plato tipo="Postres">
+        <nombre>Flan</nombre>
+        <precio>3,99€</precio>
+        <descripcion>Flan casero.</descripcion>
+        <calorias>85kcal</calorias>
+        <caracteristicas>
+            <item>Huevo</item>
+            <item>Azúcar</item>
+            <item>Lacteos</item>
+        </caracteristicas>
+    </plato>     
+    <plato tipo="Postres">
+        <nombre>Tarta de fresas con nata y queso</nombre>
+        <precio>7,99€</precio>
+        <descripcion>Porción de tarta de freas con nata y queso casera.</descripcion>
+        <calorias>85kcal</calorias>
+        <caracteristicas>
+            <item>Cereal</item>
+            <item>Azúcar</item>
+            <item>Lacteos</item>
+            <item>Vegetales</item>
+        </caracteristicas>
+    </plato>         
 </menu>
