@@ -105,11 +105,26 @@ body {
     padding-left: 4%;
 }
 
+.recolcar{
+    padding:0% 5%;
+}
+
 
 /* Otras clases */
 
+.fondo_letra_carr{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+.letra_carr{
+    color: #f4ece3;
+}
+.imgC{
+    height: 70vh;
+    object-fit: cover;
+}
+
 .bordestop {
-    margin-top: 1%;
+    padding-top: 1%;
 }
 
 .centradocol {
@@ -137,7 +152,6 @@ body {
 #iconeda {
     width: 20vh;
     height: 20vh;
-    object-fit: cover;
 }
 
 .deco1 {
@@ -169,17 +183,35 @@ body {
     justify-content: center;
 }
 
-@media only screen and (max-width: 600px) {
-    /* column-2 pasará de tener 50% a 100% */
-    .column-2 {
-        width: 100%;
-    }
-    /* column-3 pasará de tener 33.33% a 100% */
-    .column-3 {
-        width: 100%;
-    }
-    /* column-4 pasará de tener 25% a 50% */
+@media only screen and (max-width: 800px) {
     .column-4 {
-        width: 50%;
+        width: 100%;
+    }
+    .column-5 {
+        width: 100%;
+    }
+    .deco1{
+        display: none;
+    }
+    .recoltop {
+        padding-left: 7.5%;
+    }    
+}
+
+@media only screen and (max-width: 1200px) {
+    .deco1 {
+        width: 40vh;
+        height: 10vh;
+        object-fit: cover;
+    }
+    #centrardecoizq {
+        text-align: right;
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .deco1{
+        display: none;
     }
 }
