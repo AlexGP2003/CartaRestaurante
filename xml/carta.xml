@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--El XML estara formado por el plato y el atributo-->
+<!--Dentro de cada atributo el nombre,precio,descripción y características-->
+<!--Dentro de las características tendremos los diferentes ítems y especialidades que contiene nuestro plato-->
+<!--En los atributos nos podemos encontrar un tapas y tapas2 , la función es la de separarlo para una mejor distribución de la carta-->
 <menu>
     <plato tipo="Ensaladas">
         <nombre>Ensalada César</nombre>

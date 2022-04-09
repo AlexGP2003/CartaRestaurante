@@ -19,6 +19,7 @@
 </head>
 <body>
 <div>
+<!--Menú Navegación-->
 <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #9B9B9B;">
   <div class="container-fluid">
   <a class="navbar-brand" href="./index.php">
@@ -30,7 +31,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="./carta.php">Carta Iconeda</a>
+          <a class="nav-link " aria-current="page" href="./carta.php">Carta Iconeda</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./descarga.php">Descarga Nuestra Carta</a>
@@ -46,30 +47,40 @@ if (file_exists('./xml/carta.xml')) {
 } else {
     exit('Error abriendo carta.xml .');
 }
+//Array para almacenar los distintos atributos de los platos
 $aux=[];
+//Contador para crear la disposición de las columnas
 $cont=1;
-
+//Decoraciones y icono de la empresa
 echo "<div class='column-1 bordestop'>";
-echo "<div class='column-deco1 colocdec1' id='centrardecoizq'><img src='./img/decoracion1.png' alt='Deco1' class='deco1'></div>";
+echo "<div class='column-deco1' id='centrardecoizq'><img src='./img/decoracion1.png' alt='Deco1' class='deco1'></div>";
 echo "<div class='column-4 recoltop' id='portada'><img src='./img/Iconeda.png' alt='Iconeda' id='iconeda'></div>";
-echo "<div class='column-3 colocdec1 recoltop' ><img src='./img/decoracion1.png' alt='Deco1' class='deco1'></div>";
+echo "<div class='column-3 recoltop' ><img src='./img/decoracion1.png' alt='Deco1' class='deco1'></div>";
 echo "</div>";
 echo "<div class='column-1 centradocol'>";
+//Creación Carta
 foreach($carta->plato as $plato){ 
+    // Compruebo para cada atributo del plato si esta introducido en el array aux
     if(!in_array((string)$plato['tipo'],$aux)){
+        //Si lo esta y es la primera vez crearé la columna y cambiaré el contador
         if($cont==1){
             echo "<div class='column-5'>";
             $cont=2;
-        }else{
+        }
+        //Si no, cerraré el anterior que he creado y crearé la nuevo columna 
+        else{
             echo "</div>";
             echo "<div class='column-5 bordestipo'>";
         }
+        //Si el atributo es tapas2 saltara de linea sin poner titulo para no alterar la distribucion de la carta
         if($plato['tipo']!="Tapas2"){
             echo "<h2 class='centrado'>".$plato['tipo']."</h2>"; 
         }
+        //Subimos al array y creamos un salto de linea
         array_push($aux,(string)$plato['tipo']);
         echo "<br>";
     }
+    //Imprimimos todos los platos y sus respectivas caracteristicas
     echo "<div class='column-1'>";
     echo "<div class='column-1'>";
     echo "<h4>".$plato->nombre."</h4>";
@@ -87,6 +98,7 @@ foreach($carta->plato as $plato){
     echo "</div>";
     echo "<br><br>";
     echo "<div class='column-1'>";
+    //Para las especialidades creamos un foreach para recorrerlas todas y dependiendo de cual sea pondremos la imagen correspondiente
     foreach ($plato->caracteristicas->item as $item){
     if (($item) == 'Carne'){
         echo "<img class='svg' src='./img/carne.svg' alt='carne'>";
@@ -129,7 +141,9 @@ foreach($carta->plato as $plato){
 ?>
 </div>
 </div>
+<!--Finalización de la carta-->
 <br><br><br>
+<!--Creación de la leyenda donde pondremos que característica tiene y la imagen asignada a esa característica -->
 <div class="column-1 centrado">
 <h4>Leyenda de las referencias</h4>
 <br>
